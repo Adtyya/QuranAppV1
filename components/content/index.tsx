@@ -60,7 +60,7 @@ export default function Content()
                     }).slice(0, page).map((show: any)=>{
                         return(
                             <div key={show.nomor} className="flex w-full py-3 px-3 mx-3 my-3 bg-slate-200 rounded w-full h-fit md:w-1/4">
-                                <Link href={`/baca-surat-ke/${show.nomor}`}>
+                                <Link href={`/baca-surat-ke/${show.nomor}`} passHref>
                                     <div>
                                         <div className="flex flex-row">
                                             <p className="text-lg rounded-full mx-4 my-3 px-2 py-2">
